@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minha Pagina SEMANTIC-UI</title>
+	<!-- Inclusão do Semantic -->
+	<link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="  crossorigin="anonymous"></script>
+	<script src="semantic/semantic.min.js"></script>
+	<!-- Final --> 
+</head>
+<body>
+
+<!-- Divisão da Pagina - Menu -->
+<div class="ui segment container"> 	
+	<!-- Inicio do Menu -->
+	<div class="ui three item menu">
+	  <a href="index.html" class="active item">Home</a>
+	  <a href="imagem.html" class="item">Imagem</a>
+	  <a href="contato.html" class="item">Contato</a>
+	</div>
+	<!-- Final do Menu  -->
+
+</div>
+<!-- Final da Divisão - Menu. -->
+
+
+<!-- Divisão de Conteudo -->
+<div class="ui segment container"> 	
+	<h1  class="ui header">Testes de Imagem: </h1>	
+	<div class="ui divider"></div> <!-- Usado para dividir um Segmento -->
+	<div class="ui small images">
+	  <img id="imagem1" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/99/MarioSMBW.png/220px-MarioSMBW.png">
+	  <img id="imagem2" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/99/MarioSMBW.png/220px-MarioSMBW.png">
+	  <img id="imagem3" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/99/MarioSMBW.png/220px-MarioSMBW.png">
+	  <img id="imagem4" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/99/MarioSMBW.png/220px-MarioSMBW.png">
+	  <img id="imagem5" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/99/MarioSMBW.png/220px-MarioSMBW.png">
+	  <img id="imagem6" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/99/MarioSMBW.png/220px-MarioSMBW.png">
+	</div>
+</div>
+<!-- Final da Divisão de Conteudo -->
+
+
+<!-- Animação -->
+<script>
+	$('#imagem1').click(function() {
+		$('#imagem1').transition('shake');
+	});
+	$('#imagem2').click(function() {
+		$('#imagem2').transition('zoom');
+	});
+	$('#imagem3').click(function() {
+		$('#imagem3').transition('fly left');
+	});
+	$('#imagem4').click(function() {
+		$('#imagem4').transition('fly up');
+	});
+	$('#imagem5').click(function() {
+		$('#imagem5').transition('jiggle');
+	});
+	$('#imagem6').click(function() {
+		$('#imagem6').transition('flash');
+	});
+</script>
+<!-- Final de Animação -->
+</body>
+</html>

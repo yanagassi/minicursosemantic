@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minha Pagina SEMANTIC-UI</title>
+	<!-- Inclusão do Semantic -->
+	<link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="  crossorigin="anonymous"></script>
+	<script src="semantic/semantic.min.js"></script>
+	<!-- Final --> 
+</head>
+<body>
+
+<!-- Divisão da Pagina - Menu -->
+<div class="ui segment container"> 	
+	<!-- Inicio do Menu -->
+	<div class="ui three item menu">
+	  <a href="index.html" class="active item">Home</a>
+	  <a href="imagem.html" class="item">Imagem</a>
+	  <a href="contato.html" class="item">Contato</a>
+	</div>
+	<!-- Final do Menu  -->
+
+</div>
+<!-- Final da Divisão - Menu. -->
+
+
+<!-- Divisão de Conteudo -->
+<div class="ui segment container"> 	
+
+	<!-- Inicio do Cabeçalho -->
+	<h1  class="ui header">Site do João</h1>
+	<p>Seja bem vindo ao Site do João, esse é um site feito para os usuarios do semantic-ui</p>
+	<div class="ui divider"></div> <!-- Usado para dividir um Segmento -->
+	<!-- Final do Cabeçalho -->
+
+	<div class="ui segment container"> 	
+		<h3 class="ui block header">Eu</h3>
+		<img  class="ui fluid image" id="imagem" src="https://osegredo.com.br/wp-content/uploads/2017/07/9-maneiras-de-se-tornar-uma-pessoa-melhor-830x450.jpg">
+		<h1 >João André</h1>
+		<div class="ui divider"></div> <!-- Usado para dividir um Segmento -->
+		<span>
+			Thiago é formado em Engenharia de Produção, pós graduado em estatística e mestrando em administração pela Universidade Federal de Juiz de Fora (UFJF). Black Belt em Lean Six Sigma, trabalhou com metodologias para redução de custos e otimização de processos na Votorantim Metais, ingressando posteriormente na MRS Logística como trainee, onde ocupou posições de gestor e especialista em melhoria contínua. Com certificação Microsoft Office Specialist (MOS®) e Auditor Lead Acessor ISO 9001, atendeu a projetos de treinamento e consultoria na área. No ambiente acadêmico atua como professor de cursos de Graduação e Especialização na áreas de Gestão e Empreendedorismo. Sonhando em ser executivo de uma grande empresa, se descobriu empreendedor e teve a oportunidade de participar de vários empreendimentos.
+		</span>
+	</div>
+
+</div>
+<!-- Final da Divisão de Conteudo -->
+
+
+<!-- Animação -->
+<script>
+
+$('#imagem').click(function() {
+	$('#imagem').transition('shake');
+});
+</script>
+<!-- Final de Animação -->
+
+</body>
+</html>
