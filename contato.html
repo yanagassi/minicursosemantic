@@ -30,7 +30,7 @@
 	<div class="ui segment container">
 	<h1  class="ui header">Contato</h1>	
 	<div class="ui divider"></div> <!-- Usado para dividir um Segmento -->
-		<form class="ui form">
+		<form class="ui form" action="#">
 		  <div class="field">
 		    <label>Nome Completo:</label>
 		    <input type="text" name="" placeholder="Ex.: Andre do Vale">
@@ -45,11 +45,31 @@
 		      <label>Eu Aceito os termos.</label>
 		    </div>
 		  </div>
-		  <button class="ui button" type="submit">Enviar</button>
+		  <button class="ui button" id="enviar" >Enviar</button>
 		</form>
 	</div>
 </div>
 <!-- Final Divisão da Pagina - Conteudo -->
 
+
+<!-- Exemplo de Modal --> 
+<div class="ui modal">
+  <div class="header">Aviso !!!</div>
+  <div class="content">
+    <p>Você tem certeza que quer enviar esta mensagem ?</p>
+  </div>
+  <div class="actions">
+    <div class="positive ui button">Enviar</div>
+    <div class="negative ui button">Cancel</div>
+  </div>
+</div>
+<!-- Final do Exemplo de Modal --> 
+
+<script>
+	$("#enviar").click(function(){
+		$('.ui.modal').modal('show');
+	});
+
+</script>
 </body>
 </html>
